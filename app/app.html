@@ -2,27 +2,41 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Electron Boilerplate</title>
+    <title>Hanifta.io</title>
 
     <link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
 
     <script src="vendor/electron_boilerplate/env_config.js"></script>
     <script src="vendor/electron_boilerplate/context_menu.js"></script>
     <script src="vendor/electron_boilerplate/external_links.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
-<body>
+<body class="login">
+
+    <!--Toolbar-->
+    <div class="toolbar"></div>
+
+    <!--Notification messages-->
+    <div class="message"></div>
+
 
     <div class="container">
-        <h1 id="greet"></h1>
-        <p class="subtitle">
-            Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="platform-info"></strong> machine.
-        </p>
-        <p class="subtitle">
-            You are in <strong id="env-name"></strong> environment.
-        </p>
-    </div>
 
+      <ul class="list">
+
+      </ul>
+
+      <!--Login Form-->
+      <form class="login-form" action="index.html" method="post">
+        <input type="text" name="name" id="host" autofocus value="ftp.byethost7.com" placeholder="Host" style="height:40px;">
+        <br><br>
+        <input type="text" name="name" id="user" value="b7_16761643" placeholder="User" style="height:40px;">
+        <br><br>
+        <input type="password" name="name" id="password" value="yanone61" placeholder="Password" style="height:40px;">
+        <br><br>
+        <button type="button" name="button" id="connect">CONNECT</button>
+      </form>
+    </div>
 </body>
 </html>

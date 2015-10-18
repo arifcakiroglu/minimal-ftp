@@ -6,9 +6,6 @@ html, body {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: sans-serif;
 }
 
@@ -16,10 +13,134 @@ a {
     text-decoration: none;
 }
 
-.container {
-    text-align: center;
+.toolbar{
+    -webkit-app-region: drag;
+    height: 40px;
+    width: 100%;
+    background-color:#f7f8fa
+
+}
+.login .toolbar{
+    background-color: rgba(0,0,0,0.2)
 }
 
-.subtitle {
-    color: gray;
+
+
+.container {
+    padding: 0;
+    margin: 0 auto
+}
+
+
+.login{
+  background: url("../images/login-background.jpg") no-repeat 50% 50%
+}
+
+.dashboard{
+  background-color: #fff
+}
+
+
+*:focus{
+  outline: none
+}
+
+input{
+  background: transparent;
+  color:#fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 10px;
+  width: 250px
+}
+
+input:focus{
+  background-color: rgba(255,255,255,0.2)
+}
+
+button{
+  display: block;
+  background: none;
+  border: 0;
+  color:#fff;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.2)
+}
+
+button:focus{
+  background-color: rgba(0,0,0,0.2)
+}
+
+
+
+.message{
+  position: absolute;
+  top:40px;
+  left: 0;
+  width: 700px;
+  height: auto;
+  padding: 10px;
+  display:none;
+  color:#fff
+}
+
+.message.success{
+  background-color: #27ae60
+}
+
+.message.error{
+  background-color: #f52f50
+}
+
+
+.login-form{
+  width: 280px;
+  margin: 100px auto 0;
+}
+
+.list{
+
+  padding: 0;
+  margin: 50px 0 0;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+ -moz-user-select: none;     /* Firefox all */
+ -ms-user-select: none;      /* IE 10+ */
+ user-select: none;          /* Likely future */
+}
+
+.list li{
+  line-height: 30px;
+  padding-left: 50px;
+  list-style: inside none;
+  cursor: default;
+  user-select: none
+}
+
+.list li:hover{
+  box-shadow: inset 2px 0 0 0 #0186d5;
+  background-color: #fbfbfd
+}
+
+
+.icon{
+  background-position: 20px 45%;
+  background-repeat: no-repeat;
+}
+
+.folder{
+  background-image: url("../images/folder.png");
+}
+
+.code{
+  background-image: url("../images/code.png");
+}
+
+.image{
+  background-image: url("../images/image.png");
+}
+
+.noname{
+  background-image: url("../images/noname.png");
 }

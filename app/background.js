@@ -13,17 +13,21 @@ var mainWindow;
 
 // Preserver of the window size and position between app launches.
 var mainWindowState = windowStateKeeper('main', {
-    width: 1000,
-    height: 600
+    width: 700,
+    height: 500
 });
 
 app.on('ready', function () {
 
+
+   // TODO: release öncesinde width değerlerini düzelt
     mainWindow = new BrowserWindow({
         x: mainWindowState.x,
         y: mainWindowState.y,
-        width: mainWindowState.width,
-        height: mainWindowState.height
+        width: 700 || mainWindowState.width,
+        height: 500 || mainWindowState.height,
+        transparent: true,
+        frame: false
     });
 
     if (mainWindowState.isMaximized) {
@@ -38,7 +42,7 @@ app.on('ready', function () {
 
     if (env.name !== 'production') {
         devHelper.setDevMenu();
-        mainWindow.openDevTools();
+        //mainWindow.openDevTools();
     }
 
     mainWindow.on('close', function () {
