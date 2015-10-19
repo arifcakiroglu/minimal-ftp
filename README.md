@@ -1,6 +1,11 @@
 Minimal Ftp
 ==============
- 
+
+### Screenshots
+![Minimal](screenshot-connect.png)
+
+![Minimal](screenshot-list.png)
+
 
 # Quick start
 The only development dependency of this project is [Node.js](https://nodejs.org). So just make sure you have it installed.
