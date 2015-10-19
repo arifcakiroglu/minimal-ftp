@@ -72,6 +72,9 @@ function createList(list){
 
 $(function(){
 
+
+  //console.log(minimal)
+
   var c = new Client();
 
   $(document).on("dblclick", ".list li" ,function(){
