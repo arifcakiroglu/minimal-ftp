@@ -49,7 +49,7 @@ You can create Windows installer only when running on Windows, the same is true 
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Jakub Szwacz
+Copyright (c) 2015 Arif Cakiroglu - Ekin Sigic
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
