@@ -1,8 +1,8 @@
 
 
 
-module.exports = test;
+module.exports = util;
 
-function test() {
-  return "test"
+function util() {
+  return new Date();
 }
