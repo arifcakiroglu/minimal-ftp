@@ -11,23 +11,11 @@ Minimal Ftp
 The only development dependency of this project is [Node.js](https://nodejs.org). So just make sure you have it installed.
 Then type few commands known to every Node developer...
 ```
-git clone https://github.com/szwacz/electron-boilerplate.git
-cd electron-boilerplate
+git clone https://github.com/arifcakiroglu/minimal-ftp.git
+cd minimal-ftp
 npm install
 npm start
 ```
-
-# Structure of the project
-
-
-### Project's folders
-
-- `app` - code of your application goes here.
-- `config` - place for you to declare environment specific stuff.
-- `build` - in this folder lands built, runnable application.
-- `releases` - ready for distribution installers will land here.
-- `resources` - resources for particular operating system.
-- `tasks` - build and development environment scripts.
 
 
 # Development
@@ -37,7 +25,6 @@ npm start
 ```
 npm install
 ```
-It will also download Electron runtime, and install dependencies for second `package.json` file inside `app` folder.
 
 #### Starting the app
 
