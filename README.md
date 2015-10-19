@@ -1,7 +1,8 @@
-Minimal Ftp
+Minimal Ftp (Pre-Alpha)
 ==============
 
 ### Screenshots
+
 ![Minimal](screenshot-connect.png)
 
 ![Minimal](screenshot-list.png)
