@@ -1,5 +1,7 @@
 Minimal Ftp (Pre-Alpha)
 ==============
+Download [pre-alpha](https://github.com/arifcakiroglu/minimal-ftp/releases)
+
 
 ### Screenshots
 
